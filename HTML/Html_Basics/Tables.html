@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Learning tables in HTML">
+    </head>
+    <body>
+<!--
+    <table>...</table> :-describes tables in html document
+    <caption>...</caption> :-describes what would be the heading of the table
+    <th>...</th> ;-describes what would be heading of each column (stands for table header)
+    <tr>...</tr> :-describes what would be each row of the table ( stands for table row )
+    <td>...</td> :- describes the columns for table ( stands for table decription )
+    <thead>...</thead> decides the header of the table
+    <tbody>,,,</tbody> describes the body of the table
+-->
+        <table>
+            <thead>
+            <caption>Table Listing</caption>
+                <tr>
+                    <th>First Col</th>
+                    <th>Second Col</th>
+                    <th>Third Col</th>
+                </tr>
+<!--
+    colspan :- Its an attribute that controls how many columns each table data spans
+-->    
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">one</td>
+                    <td>two</td>
+                    <td>three</td>
+                </tr>
+                <tr>
+                    <td>four</td>
+                    <td>five</td>
+                    <td>six</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
