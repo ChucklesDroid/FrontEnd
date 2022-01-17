@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="description" content="Aakarsh's Website">
+        <title>Inputs & Forms </title>
+    </head>
+    <body>
+<!-- 
+    In order to get information through these text boxes from the user we need to
+    make use of javascript .
+-->
+<!-- Basic input text box -->
+        <input type="text" /> 
+<!-- Text box for taking passwords -->        
+        <input type="password"/>
+<!-- Text box for giving default content in the text box-->
+        <input type="text" value="Enter default value" />
+        <br/>
+<!-- We can also have a text area so instead of having a single line we have a
+     huge block where we can insert text 
+     Note :- we can even resize the text area. 
+     We can even define attributes for a text area by giving it a specified no 
+     of rows and columns .
+     We can even have default text in the textarea by using the attribute "value" -->
+        <textarea rows="10" cols="30"> Enter description of victim </textarea>
+        <br/>
+<!-- We can actually accept a multitude of inputs from the user which governs the 
+     type of text . Eg:-
+     (i) text   { most basic input }
+     (ii) password { to input password from the user }
+     (iii) date { a calender would show up from where we can select the date . Note:- Its implementation is browser dependant }
+     (iv) email { its actually pretty similar to text attribute but helps in readability }
+     (v) range { it gives a slider to select the range }
+     (vi) file { It helps to upload a file from the localhost }
+
+     Different types of button can also be defined
+     (vll) checkbox { it is used to put a check mark in the box }
+     (viii) radio { It's shape is circular and is also used to select option }
+     (ix) submit { its used to submit response just like in a form }
+-->
+        <input type="date"/><br/>
+        <input type="email" value="Enter your email"/><br/>
+        <input type="range"/><br/>
+        <input type="file"/>
+        <br/>
+<!-- Difference between checkboxes and radio buttons :-
+     (i) By making use of type="checkbox" we can create checkbox where we can select 
+         both the checkboxes but if we use name="default1" attribute along with type="radio" we  
+         not only have created circular boxes but also we can only choose one of the two 
+         options as given in example below ( this would function as long as both of
+         the radio input tags have same name ).
+-->
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <br/>
+        <input name="default1" type="radio"/>
+        <input name="default1" type="radio"/>
+        <br/>
+        <input type="submit"/>
+<!-- For more type attributes:- https://www.w3schools.com/tags/tag_input.asp -->
+
+<!-- <form>...</form> is a wrapper which is used to accept input from the user
+     and makes use of javascript to do so. For now since we are learning about 
+     HTML we have not gone in detail about this .-->
+        <form>
+            <input type="text"/>
+        </form>
+
+
+        </body>
+</html>
