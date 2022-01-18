@@ -1,0 +1,57 @@
+<!-- New things learnt :-
+    (i) align attribute used with div container tag
+    (2) <select> and <option> tags which helps choose one of the options from the drop down menu
+    (3) action attribute used with forms is used to specify where the form data is to be sent after submission of the form-->
+
+!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Employee Interests Survey Form">
+        <meta name="Aakarsh" content="Aakarsh">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Employee Interest Survey</title>
+    </head>
+<!--    We can align the page using attribte "align" and passing it value "center"
+        inside <div>...</div> tag -->
+    <body>
+        <div align="center">
+            <form action="https://www.google.com">
+                <header>
+                    <h1><b><big>Employee Interests Survey form</big></b></h1></br>
+                </header>
+                <main>
+                    Enter your name:
+                    <input type="text"></br></br>
+                    Enter your department:
+                    <input type="text"></br></br>
+                    Tell us a little about yourself:
+                    <textarea rows="10" cols="30"></textarea></br></br>
+                    Do you exercise at home ?
+                    <input name="exercise" type="radio">Yes
+                    <input name="exercise" type="radio">No </br></br>
+                    How do you like to read your favourite topics?</br></br>
+                    <span>
+                    <input type="checkbox" name="Option1">Books
+                    <input type="checkbox" name="Option2">Online resources
+                    <input type="checkbox" name="Option3">Phone apps
+                    <input type="checkbox" name="Option4">Magazines 
+                    </span></br></br>                    
+                    What genre of movies do you like?    
+<!-- select and option tag allows you to choose one of the options from the drop dowm menu -->                       
+                    <select name="movies">
+                        <option value="1">comedy</option>
+                        <option value="2">romance</option>
+                        <option value="3">thriller</option>
+                        <option value="4">horror</option>
+                        <option>biopic</option>
+                    </select>
+                    </br></br>
+                    <input type="submit" value="Submit form"> 
+                </main>
+                <footer>
+                </footer>
+            </form>
+        </div>
+    </body>
+</html>
